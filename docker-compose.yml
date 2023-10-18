@@ -1,0 +1,12 @@
+version: '3.9'
+services:
+    kavita:
+        image: kizaing/kavita:latest
+        volumes:
+            - ./software:/software
+            - ./manga:/manga
+            - ./ebook-store:/ebook-store
+            - ./data:/kavita/config
+        ports:
+            - "8999:5000"
+        restart: unless-stopped
