@@ -1,5 +1,5 @@
 #!/bin/bash
-FOLDERS=("software" "manga" "ebook-store","data")
+FOLDERS=("software" "manga" "ebook-store" "data")
 
 # Loop สร้างโฟลเดอร์ทั้งหมด
 for FOLDER in "${FOLDERS[@]}"; do
